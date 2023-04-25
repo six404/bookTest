@@ -168,9 +168,9 @@ public class BookController {
     public R updOneBook(@RequestBody Book book){
         int flag = bookService.updOneBook(book);
         if (flag != 1){
-            return new R(Code.WORK_ERR,"新增书本信息失败！");
+            return new R(Code.WORK_ERR,"更新书本信息失败！");
         }else {
-            return new R(Code.WORK_OK,"新增书本信息成功！");
+            return new R(Code.WORK_OK,"更新书本信息成功！");
         }
     }
 
